@@ -95,7 +95,8 @@ int main(int argc, char* argv[])
         {
             std::cout << "Could not decide the generalised soundness of " <<  cGraph->GetLabel() << " !" << std::endl;
             cWFReducer->GetReducedWF()->SaveAsDot("dot/red_"+cWFReducer->GetReducedWF()->GetLabel()+".dot");
-            //cWFReducer->GetReducedWF()->SaveAsXML("xml/red_"+cWFReducer->GetReducedWF()->GetLabel()+".xml");
+
+            cWFReducer->GetReducedWF()->SaveAsXML("xml/red_"+cWFReducer->GetReducedWF()->GetLabel()+".xml");
         }
 
         std::cout <<  std::endl;

@@ -45,8 +45,8 @@ set(RED_BATCH_SOURCE_FILES
     Source/mainRedBatch.cpp
  )
 
-include_directories("/home/low/Tools/z3-4.3.2.6/include")
-find_library(z3 z3 /home/low/Tools/z3-4.3.2.6/bin NO_DEFAULT_PATH)
+include_directories("/home/local/USHERBROOKE/offp3001/z3-4.4.0-x64-ubuntu-14.04/include")
+find_library(z3 z3 /home/local/USHERBROOKE/offp3001/z3-4.4.0-x64-ubuntu-14.04/bin NO_DEFAULT_PATH)
 add_executable(Hadara_AdSimul_Red ${RED_SOURCE_FILES})
 target_link_libraries(Hadara_AdSimul_Red ${z3})
 add_executable(Hadara_AdSimul_Red_Web ${RED_WEB_SOURCE_FILES})
